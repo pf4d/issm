@@ -1,0 +1,1509 @@
+modules/InputDuplicatex/libISSMCore_la-InputDuplicatex.lo: \
+ modules/InputDuplicatex/InputDuplicatex.cpp /usr/include/stdc-predef.h \
+ modules/InputDuplicatex/./InputDuplicatex.h \
+ modules/InputDuplicatex/./../../classes/classes.h \
+ modules/InputDuplicatex/./../../classes/./Contour.h \
+ modules/InputDuplicatex/./../../classes/./../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./FSanalyticals/fsanalyticals.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./FSanalyticals/../Numerics/types.h \
+ ../.././config.h /usr/include/stdio.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./MemOps/MemOps.h \
+ /usr/include/c++/5/cassert /usr/include/assert.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/shared.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/Abs.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/BigPrimeNumber.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/BinaryRand.h \
+ /usr/include/c++/5/cstdlib \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/Exchange.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/extrema.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/HeapSort.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/OppositeAngle.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Bamg/../Numerics/constants.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Elements/elements.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Elements/../Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Enum/./EnumDefinitions.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Exceptions/exceptions.h \
+ /usr/include/c++/5/exception \
+ /usr/include/c++/5/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/5/string /usr/include/c++/5/bits/stringfwd.h \
+ /usr/include/c++/5/bits/memoryfwd.h \
+ /usr/include/c++/5/bits/char_traits.h \
+ /usr/include/c++/5/bits/stl_algobase.h \
+ /usr/include/c++/5/bits/functexcept.h \
+ /usr/include/c++/5/bits/exception_defines.h \
+ /usr/include/c++/5/bits/cpp_type_traits.h \
+ /usr/include/c++/5/ext/type_traits.h \
+ /usr/include/c++/5/ext/numeric_traits.h \
+ /usr/include/c++/5/bits/stl_pair.h /usr/include/c++/5/bits/move.h \
+ /usr/include/c++/5/bits/concept_check.h \
+ /usr/include/c++/5/bits/stl_iterator_base_types.h \
+ /usr/include/c++/5/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/5/debug/debug.h /usr/include/c++/5/bits/stl_iterator.h \
+ /usr/include/c++/5/bits/ptr_traits.h \
+ /usr/include/c++/5/bits/predefined_ops.h \
+ /usr/include/c++/5/bits/postypes.h /usr/include/c++/5/cwchar \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
+ /usr/include/c++/5/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/c++allocator.h \
+ /usr/include/c++/5/ext/new_allocator.h /usr/include/c++/5/new \
+ /usr/include/c++/5/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h \
+ /usr/include/c++/5/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/5/iosfwd \
+ /usr/include/c++/5/cctype /usr/include/ctype.h \
+ /usr/include/c++/5/bits/ostream_insert.h \
+ /usr/include/c++/5/bits/cxxabi_forced.h \
+ /usr/include/c++/5/bits/stl_function.h \
+ /usr/include/c++/5/backward/binders.h \
+ /usr/include/c++/5/bits/range_access.h \
+ /usr/include/c++/5/bits/basic_string.h \
+ /usr/include/c++/5/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/atomic_word.h \
+ /usr/include/c++/5/ext/alloc_traits.h \
+ /usr/include/c++/5/bits/basic_string.tcc /usr/include/c++/5/iostream \
+ /usr/include/c++/5/ostream /usr/include/c++/5/ios \
+ /usr/include/c++/5/bits/ios_base.h \
+ /usr/include/c++/5/bits/locale_classes.h \
+ /usr/include/c++/5/bits/locale_classes.tcc /usr/include/c++/5/stdexcept \
+ /usr/include/c++/5/streambuf /usr/include/c++/5/bits/streambuf.tcc \
+ /usr/include/c++/5/bits/basic_ios.h \
+ /usr/include/c++/5/bits/locale_facets.h /usr/include/c++/5/cwctype \
+ /usr/include/wctype.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_base.h \
+ /usr/include/c++/5/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/5/bits/ctype_inline.h \
+ /usr/include/c++/5/bits/locale_facets.tcc \
+ /usr/include/c++/5/bits/basic_ios.tcc \
+ /usr/include/c++/5/bits/ostream.tcc /usr/include/c++/5/istream \
+ /usr/include/c++/5/bits/istream.tcc /usr/include/c++/5/sstream \
+ /usr/include/c++/5/bits/sstream.tcc /usr/include/c++/5/iomanip \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/io.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/IssmComm.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/issmmpi.h \
+ /usr/include/c++/5/cstddef \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/../../shared/Numerics/types.h \
+ /home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpi.h \
+ /home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpio.h \
+ /home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpi.h \
+ /home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpicxx.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/commops.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../../shared/io/Comm/IssmComm.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../mpi/issmmpi.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Disk/diskio.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Print/Print.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Marshalling/Marshalling.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./io/./Marshalling/IoCodeConversions.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Exp/exp.h \
+ /usr/include/c++/5/cstring /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Exp/../Numerics/recast.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Exp/../Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Exp/../MemOps/MemOps.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Matrix/matrix.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Matrix/../Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/numerics.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./Verbosity.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./GaussPoints.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./isnan.h \
+ /usr/include/c++/5/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+ /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+ /usr/include/x86_64-linux-gnu/bits/inf.h \
+ /usr/include/x86_64-linux-gnu/bits/nan.h \
+ /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathinline.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./recast.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./constants.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./OptPars.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Numerics/././types.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Sorting/sorting.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./String/sharedstring.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./Threads/issm_threads.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./TriMesh/trimesh.h \
+ modules/InputDuplicatex/./../../classes/./../shared/./LatLong/latlong.h \
+ modules/InputDuplicatex/./../../classes/./../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./../datastructures/./DataSet.h \
+ /usr/include/c++/5/vector /usr/include/c++/5/bits/stl_construct.h \
+ /usr/include/c++/5/bits/stl_uninitialized.h \
+ /usr/include/c++/5/bits/stl_vector.h \
+ /usr/include/c++/5/bits/stl_bvector.h /usr/include/c++/5/bits/vector.tcc \
+ modules/InputDuplicatex/./../../classes/./../datastructures/./Object.h \
+ modules/InputDuplicatex/./../../classes/./Vertices.h \
+ modules/InputDuplicatex/./../../classes/./Vertex.h \
+ modules/InputDuplicatex/./../../classes/././classes.h \
+ modules/InputDuplicatex/./../../classes/./../shared/Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/toolkits.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/petscincludes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscmat.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscvec.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscis.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscsys.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscconf.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscfix.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscversion.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscmath.h \
+ /usr/include/c++/5/complex \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscerror.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscviewertypes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscoptions.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petsclog.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/sys/param.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/bits/param.h /usr/include/linux/param.h \
+ /usr/include/x86_64-linux-gnu/asm/param.h \
+ /usr/include/asm-generic/param.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscsftypes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscistypes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscviewer.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscdrawtypes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscksp.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscpc.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscpctypes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscdmtypes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/petscpatches.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/./SolverEnum.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/../../toolkitsenums.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/../../../shared/io/Comm/IssmComm.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/petscobjects.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./../petscincludes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./../../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscSolver.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./mpi/issmmpi.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./metis/metisincludes.h \
+ /home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/metis.h \
+ /usr/include/inttypes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./metis/patches/metispatches.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./triangle/triangleincludes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/toolkitobjects.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Vector.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../../shared/Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../petsc/petscincludes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/issmtoolkit.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmAbsMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../toolkitsenums.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmAbsVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmDenseMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmSeqVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../gsl/gslincludes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../gsl/../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../ToolkitOptions.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmToolkitUtils.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmSeqVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/MemOps/MemOps.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmSolver.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiDenseMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../mumps/mumpsincludes.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../mumps/../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././Bucket.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/io/Comm/IssmComm.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../toolkitsenums.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmMpiVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/MemOps/MemOps.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/io/io.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../mpi/issmmpi.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiSparseMat.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././SparseRow.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiVec.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Matrix.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Solver.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/././Matrix.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./objects/././Vector.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./toolkitsenums.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./issm/issmtoolkit.h \
+ modules/InputDuplicatex/./../../classes/./../toolkits/./ToolkitOptions.h \
+ modules/InputDuplicatex/./../../classes/./Nodes.h \
+ modules/InputDuplicatex/./../../classes/./Contours.h \
+ modules/InputDuplicatex/./../../classes/././Contour.h \
+ modules/InputDuplicatex/./../../classes/./Node.h \
+ modules/InputDuplicatex/./../../classes/././DofIndexing.h \
+ modules/InputDuplicatex/./../../classes/././../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/././Update.h \
+ modules/InputDuplicatex/./../../classes/././../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Profiler.h \
+ modules/InputDuplicatex/./../../classes/./DependentObject.h \
+ modules/InputDuplicatex/./../../classes/./Segment.h \
+ modules/InputDuplicatex/./../../classes/./../shared/Numerics/constants.h \
+ modules/InputDuplicatex/./../../classes/./Massfluxatgate.h \
+ modules/InputDuplicatex/./../../classes/././Definition.h \
+ modules/InputDuplicatex/./../../classes/././Elements/Element.h \
+ modules/InputDuplicatex/./../../classes/././Elements/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/././Elements/../../toolkits/toolkits.h \
+ modules/InputDuplicatex/./../../classes/././Elements/../Update.h \
+ modules/InputDuplicatex/./../../classes/././Elements/Elements.h \
+ modules/InputDuplicatex/./../../classes/././FemModel.h \
+ modules/InputDuplicatex/./../../classes/././../toolkits/toolkits.h \
+ modules/InputDuplicatex/./../../classes/./Misfit.h \
+ modules/InputDuplicatex/./../../classes/./../modules/SurfaceAreax/SurfaceAreax.h \
+ modules/InputDuplicatex/./../../classes/./../modules/SurfaceAreax/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../classes/Params/Parameters.h \
+ modules/InputDuplicatex/./../../classes/./../classes/Params/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../classes/Inputs/Input.h \
+ modules/InputDuplicatex/./../../classes/./../classes/Inputs/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./../classes/Inputs/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./../classes/gauss/Gauss.h \
+ modules/InputDuplicatex/./../../classes/./Nodalvalue.h \
+ modules/InputDuplicatex/./../../classes/./Masscon.h \
+ modules/InputDuplicatex/./../../classes/./Massconaxpby.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/Constraints.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/Constraint.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/../../toolkits/toolkits.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/SpcStatic.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/SpcTransient.h \
+ modules/InputDuplicatex/./../../classes/./Constraints/SpcDynamic.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Loads.h \
+ modules/InputDuplicatex/./../../classes/./Loads/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Load.h \
+ modules/InputDuplicatex/./../../classes/./Loads/../Update.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Friction.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Numericalflux.h \
+ modules/InputDuplicatex/./../../classes/./Loads/./Load.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Neumannflux.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Riftfront.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Penpair.h \
+ modules/InputDuplicatex/./../../classes/./Loads/../Node.h \
+ modules/InputDuplicatex/./../../classes/./Loads/../Elements/Element.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Pengrid.h \
+ modules/InputDuplicatex/./../../classes/./Loads/Moulin.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Elements.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Element.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Penta.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./Element.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./ElementHook.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./PentaRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/../../shared/Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./Elements/../../shared/Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./Elements/PentaRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Seg.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./SegRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/SegRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Tria.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./TriaRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/TriaRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/Tetra.h \
+ modules/InputDuplicatex/./../../classes/./Elements/./TetraRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/TetraRef.h \
+ modules/InputDuplicatex/./../../classes/./Elements/ElementHook.h \
+ modules/InputDuplicatex/./../../classes/./Options/Option.h \
+ modules/InputDuplicatex/./../../classes/./Options/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Options/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Options/Options.h \
+ modules/InputDuplicatex/./../../classes/./Options/./GenericOption.h \
+ modules/InputDuplicatex/./../../classes/./Options/./../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Options/./../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Options/././OptionUtilities.h \
+ modules/InputDuplicatex/./../../classes/./Options/././../../shared/Exceptions/exceptions.h \
+ modules/InputDuplicatex/./../../classes/./Options/././../../shared/Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./Options/./././Option.h \
+ modules/InputDuplicatex/./../../classes/./Options/GenericOption.h \
+ modules/InputDuplicatex/./../../classes/./Options/OptionUtilities.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/Inputs.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/Input.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/BoolInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/./Input.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/DoubleInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/DoubleArrayInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/IntInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/TetraInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../Elements/TetraRef.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/PentaInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../Elements/PentaRef.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/TriaInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../Elements/TriaRef.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/SegInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/../Elements/SegRef.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/ControlInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/DatasetInput.h \
+ modules/InputDuplicatex/./../../classes/./Inputs/TransientInput.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/Results.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/ExternalResult.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/../Node.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/GenericExternalResult.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/./ExternalResult.h \
+ modules/InputDuplicatex/./../../classes/./ExternalResults/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Materials/Materials.h \
+ modules/InputDuplicatex/./../../classes/./Materials/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Materials/Material.h \
+ modules/InputDuplicatex/./../../classes/./Materials/../Update.h \
+ modules/InputDuplicatex/./../../classes/./Materials/Matice.h \
+ modules/InputDuplicatex/./../../classes/./Materials/./Material.h \
+ modules/InputDuplicatex/./../../classes/./Materials/../Hook.h \
+ modules/InputDuplicatex/./../../classes/./Materials/../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Materials/Matestar.h \
+ modules/InputDuplicatex/./../../classes/./Materials/Matpar.h \
+ modules/InputDuplicatex/./../../classes/./Params/GenericParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/./Param.h \
+ modules/InputDuplicatex/./../../classes/./Params/./../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./Params/./../Node.h \
+ modules/InputDuplicatex/./../../classes/./Params/../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Params/BoolParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DoubleMatParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DoubleTransientMatParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DoubleMatArrayParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DoubleParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DoubleVecParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/IntParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/IntVecParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/IntMatParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/FileParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/Parameters.h \
+ modules/InputDuplicatex/./../../classes/./Params/Param.h \
+ modules/InputDuplicatex/./../../classes/./Params/MatrixParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/VectorParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/StringArrayParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/StringParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/TransientParam.h \
+ modules/InputDuplicatex/./../../classes/./Params/DataSetParam.h \
+ modules/InputDuplicatex/./../../classes/./matrix/matrixobjects.h \
+ modules/InputDuplicatex/./../../classes/./matrix/./ElementMatrix.h \
+ modules/InputDuplicatex/./../../classes/./matrix/./../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./matrix/./../../toolkits/toolkits.h \
+ modules/InputDuplicatex/./../../classes/./matrix/./../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./matrix/./ElementVector.h \
+ modules/InputDuplicatex/./../../classes/./gauss/gaussobjects.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./Gauss.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./GaussSeg.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./../../shared/Numerics/types.h \
+ modules/InputDuplicatex/./../../classes/./gauss/././Gauss.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./GaussTria.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./GaussTetra.h \
+ modules/InputDuplicatex/./../../classes/./gauss/./GaussPenta.h \
+ modules/InputDuplicatex/./../../classes/./kriging/krigingobjects.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./Variogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./../../datastructures/datastructures.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./GaussianVariogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/././Variogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./ExponentialVariogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./SphericalVariogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./PowerVariogram.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./Quadtree.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./Covertree.h \
+ /usr/include/c++/5/map /usr/include/c++/5/bits/stl_tree.h \
+ /usr/include/c++/5/bits/stl_map.h /usr/include/c++/5/bits/stl_multimap.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./Observation.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./Observations.h \
+ modules/InputDuplicatex/./../../classes/./kriging/./../../shared/shared.h \
+ modules/InputDuplicatex/./../../classes/./Dakota/IssmDirectApplicInterface.h \
+ modules/InputDuplicatex/./../../classes/./Dakota/IssmParallelDirectApplicInterface.h \
+ modules/InputDuplicatex/./../../classes/./Hook.h \
+ modules/InputDuplicatex/./../../classes/./DofIndexing.h \
+ modules/InputDuplicatex/./../../classes/./IoModel.h \
+ modules/InputDuplicatex/./../../classes/./../shared/Enum/Enum.h \
+ modules/InputDuplicatex/./../../classes/./Update.h \
+ modules/InputDuplicatex/./../../classes/./FemModel.h \
+ modules/InputDuplicatex/./../../classes/./GiaDeflectionCoreArgs.h \
+ modules/InputDuplicatex/./../../classes/./RiftStruct.h \
+ modules/InputDuplicatex/../../shared/shared.h \
+ modules/InputDuplicatex/../../classes/classes.h \
+ modules/InputDuplicatex/../../toolkits/toolkits.h
+
+/usr/include/stdc-predef.h:
+
+modules/InputDuplicatex/./InputDuplicatex.h:
+
+modules/InputDuplicatex/./../../classes/classes.h:
+
+modules/InputDuplicatex/./../../classes/./Contour.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./FSanalyticals/fsanalyticals.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./FSanalyticals/../Numerics/types.h:
+
+../.././config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./MemOps/MemOps.h:
+
+/usr/include/c++/5/cassert:
+
+/usr/include/assert.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/Abs.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/BigPrimeNumber.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/BinaryRand.h:
+
+/usr/include/c++/5/cstdlib:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/Exchange.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/extrema.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/HeapSort.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/OppositeAngle.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Bamg/../Numerics/constants.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Elements/elements.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Elements/../Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Enum/./EnumDefinitions.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Exceptions/exceptions.h:
+
+/usr/include/c++/5/exception:
+
+/usr/include/c++/5/bits/atomic_lockfree_defines.h:
+
+/usr/include/c++/5/string:
+
+/usr/include/c++/5/bits/stringfwd.h:
+
+/usr/include/c++/5/bits/memoryfwd.h:
+
+/usr/include/c++/5/bits/char_traits.h:
+
+/usr/include/c++/5/bits/stl_algobase.h:
+
+/usr/include/c++/5/bits/functexcept.h:
+
+/usr/include/c++/5/bits/exception_defines.h:
+
+/usr/include/c++/5/bits/cpp_type_traits.h:
+
+/usr/include/c++/5/ext/type_traits.h:
+
+/usr/include/c++/5/ext/numeric_traits.h:
+
+/usr/include/c++/5/bits/stl_pair.h:
+
+/usr/include/c++/5/bits/move.h:
+
+/usr/include/c++/5/bits/concept_check.h:
+
+/usr/include/c++/5/bits/stl_iterator_base_types.h:
+
+/usr/include/c++/5/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/5/debug/debug.h:
+
+/usr/include/c++/5/bits/stl_iterator.h:
+
+/usr/include/c++/5/bits/ptr_traits.h:
+
+/usr/include/c++/5/bits/predefined_ops.h:
+
+/usr/include/c++/5/bits/postypes.h:
+
+/usr/include/c++/5/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/c++/5/bits/allocator.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/c++allocator.h:
+
+/usr/include/c++/5/ext/new_allocator.h:
+
+/usr/include/c++/5/new:
+
+/usr/include/c++/5/bits/localefwd.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/c++locale.h:
+
+/usr/include/c++/5/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/5/iosfwd:
+
+/usr/include/c++/5/cctype:
+
+/usr/include/ctype.h:
+
+/usr/include/c++/5/bits/ostream_insert.h:
+
+/usr/include/c++/5/bits/cxxabi_forced.h:
+
+/usr/include/c++/5/bits/stl_function.h:
+
+/usr/include/c++/5/backward/binders.h:
+
+/usr/include/c++/5/bits/range_access.h:
+
+/usr/include/c++/5/bits/basic_string.h:
+
+/usr/include/c++/5/ext/atomicity.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/atomic_word.h:
+
+/usr/include/c++/5/ext/alloc_traits.h:
+
+/usr/include/c++/5/bits/basic_string.tcc:
+
+/usr/include/c++/5/iostream:
+
+/usr/include/c++/5/ostream:
+
+/usr/include/c++/5/ios:
+
+/usr/include/c++/5/bits/ios_base.h:
+
+/usr/include/c++/5/bits/locale_classes.h:
+
+/usr/include/c++/5/bits/locale_classes.tcc:
+
+/usr/include/c++/5/stdexcept:
+
+/usr/include/c++/5/streambuf:
+
+/usr/include/c++/5/bits/streambuf.tcc:
+
+/usr/include/c++/5/bits/basic_ios.h:
+
+/usr/include/c++/5/bits/locale_facets.h:
+
+/usr/include/c++/5/cwctype:
+
+/usr/include/wctype.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/ctype_base.h:
+
+/usr/include/c++/5/bits/streambuf_iterator.h:
+
+/usr/include/x86_64-linux-gnu/c++/5/bits/ctype_inline.h:
+
+/usr/include/c++/5/bits/locale_facets.tcc:
+
+/usr/include/c++/5/bits/basic_ios.tcc:
+
+/usr/include/c++/5/bits/ostream.tcc:
+
+/usr/include/c++/5/istream:
+
+/usr/include/c++/5/bits/istream.tcc:
+
+/usr/include/c++/5/sstream:
+
+/usr/include/c++/5/bits/sstream.tcc:
+
+/usr/include/c++/5/iomanip:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/io.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/IssmComm.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/issmmpi.h:
+
+/usr/include/c++/5/cstddef:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/../../shared/Numerics/types.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpi.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpio.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpi.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/mpich/install/include/mpicxx.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/commops.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../../shared/io/Comm/IssmComm.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Comm/../../../toolkits/mpi/./commops/../../mpi/issmmpi.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Disk/diskio.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Print/Print.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Marshalling/Marshalling.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./io/./Marshalling/IoCodeConversions.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Exp/exp.h:
+
+/usr/include/c++/5/cstring:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Exp/../Numerics/recast.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Exp/../Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Exp/../MemOps/MemOps.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Matrix/matrix.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Matrix/../Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/numerics.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./Verbosity.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./GaussPoints.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./isnan.h:
+
+/usr/include/c++/5/cmath:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
+
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathinline.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./recast.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./constants.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/./OptPars.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Numerics/././types.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Sorting/sorting.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./String/sharedstring.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./Threads/issm_threads.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./TriMesh/trimesh.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/./LatLong/latlong.h:
+
+modules/InputDuplicatex/./../../classes/./../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./../datastructures/./DataSet.h:
+
+/usr/include/c++/5/vector:
+
+/usr/include/c++/5/bits/stl_construct.h:
+
+/usr/include/c++/5/bits/stl_uninitialized.h:
+
+/usr/include/c++/5/bits/stl_vector.h:
+
+/usr/include/c++/5/bits/stl_bvector.h:
+
+/usr/include/c++/5/bits/vector.tcc:
+
+modules/InputDuplicatex/./../../classes/./../datastructures/./Object.h:
+
+modules/InputDuplicatex/./../../classes/./Vertices.h:
+
+modules/InputDuplicatex/./../../classes/./Vertex.h:
+
+modules/InputDuplicatex/./../../classes/././classes.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/toolkits.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/petscincludes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscmat.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscvec.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscis.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscsys.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscconf.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscfix.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscversion.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscmath.h:
+
+/usr/include/c++/5/complex:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscerror.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscviewertypes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscoptions.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petsclog.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/xmmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/mmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/mm_malloc.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/emmintrin.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/sys/param.h:
+
+/usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/param.h:
+
+/usr/include/linux/param.h:
+
+/usr/include/x86_64-linux-gnu/asm/param.h:
+
+/usr/include/asm-generic/param.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscsftypes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscistypes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscviewer.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscdrawtypes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscksp.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscpc.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscpctypes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/petscdmtypes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/petscpatches.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/./SolverEnum.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/../../toolkitsenums.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/patches/../../../shared/io/Comm/IssmComm.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/petscobjects.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./../petscincludes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./../../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./petsc/objects/./PetscSolver.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./mpi/issmmpi.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./metis/metisincludes.h:
+
+/home/pf4d/software/issm/trunk/externalpackages/petsc/install/include/metis.h:
+
+/usr/include/inttypes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./metis/patches/metispatches.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./triangle/triangleincludes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/toolkitobjects.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Vector.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../../shared/Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../petsc/petscincludes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/issmtoolkit.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmAbsMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../toolkitsenums.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmAbsVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmDenseMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmSeqVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../gsl/gslincludes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../gsl/../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../ToolkitOptions.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmToolkitUtils.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmSeqVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../shared/MemOps/MemOps.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmSolver.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiDenseMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../mumps/mumpsincludes.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./../mumps/../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././Bucket.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/io/Comm/IssmComm.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../toolkitsenums.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././IssmMpiVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/MemOps/MemOps.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../../shared/io/io.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././../mpi/issmmpi.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiSparseMat.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/././SparseRow.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./../issm/./IssmMpiVec.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Matrix.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/./Solver.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/././Matrix.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./objects/././Vector.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./toolkitsenums.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./issm/issmtoolkit.h:
+
+modules/InputDuplicatex/./../../classes/./../toolkits/./ToolkitOptions.h:
+
+modules/InputDuplicatex/./../../classes/./Nodes.h:
+
+modules/InputDuplicatex/./../../classes/./Contours.h:
+
+modules/InputDuplicatex/./../../classes/././Contour.h:
+
+modules/InputDuplicatex/./../../classes/./Node.h:
+
+modules/InputDuplicatex/./../../classes/././DofIndexing.h:
+
+modules/InputDuplicatex/./../../classes/././../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/././Update.h:
+
+modules/InputDuplicatex/./../../classes/././../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Profiler.h:
+
+modules/InputDuplicatex/./../../classes/./DependentObject.h:
+
+modules/InputDuplicatex/./../../classes/./Segment.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/Numerics/constants.h:
+
+modules/InputDuplicatex/./../../classes/./Massfluxatgate.h:
+
+modules/InputDuplicatex/./../../classes/././Definition.h:
+
+modules/InputDuplicatex/./../../classes/././Elements/Element.h:
+
+modules/InputDuplicatex/./../../classes/././Elements/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/././Elements/../../toolkits/toolkits.h:
+
+modules/InputDuplicatex/./../../classes/././Elements/../Update.h:
+
+modules/InputDuplicatex/./../../classes/././Elements/Elements.h:
+
+modules/InputDuplicatex/./../../classes/././FemModel.h:
+
+modules/InputDuplicatex/./../../classes/././../toolkits/toolkits.h:
+
+modules/InputDuplicatex/./../../classes/./Misfit.h:
+
+modules/InputDuplicatex/./../../classes/./../modules/SurfaceAreax/SurfaceAreax.h:
+
+modules/InputDuplicatex/./../../classes/./../modules/SurfaceAreax/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/Params/Parameters.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/Params/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/Inputs/Input.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/Inputs/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/Inputs/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./../classes/gauss/Gauss.h:
+
+modules/InputDuplicatex/./../../classes/./Nodalvalue.h:
+
+modules/InputDuplicatex/./../../classes/./Masscon.h:
+
+modules/InputDuplicatex/./../../classes/./Massconaxpby.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/Constraints.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/Constraint.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/../../toolkits/toolkits.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/SpcStatic.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/SpcTransient.h:
+
+modules/InputDuplicatex/./../../classes/./Constraints/SpcDynamic.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Loads.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Load.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/../Update.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Friction.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Numericalflux.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/./Load.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Neumannflux.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Riftfront.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Penpair.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/../Node.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/../Elements/Element.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Pengrid.h:
+
+modules/InputDuplicatex/./../../classes/./Loads/Moulin.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Elements.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Element.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Penta.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./Element.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./ElementHook.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./PentaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/../../shared/Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/../../shared/Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/PentaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Seg.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./SegRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/SegRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Tria.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./TriaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/TriaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/Tetra.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/./TetraRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/TetraRef.h:
+
+modules/InputDuplicatex/./../../classes/./Elements/ElementHook.h:
+
+modules/InputDuplicatex/./../../classes/./Options/Option.h:
+
+modules/InputDuplicatex/./../../classes/./Options/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Options/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Options/Options.h:
+
+modules/InputDuplicatex/./../../classes/./Options/./GenericOption.h:
+
+modules/InputDuplicatex/./../../classes/./Options/./../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Options/./../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Options/././OptionUtilities.h:
+
+modules/InputDuplicatex/./../../classes/./Options/././../../shared/Exceptions/exceptions.h:
+
+modules/InputDuplicatex/./../../classes/./Options/././../../shared/Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./Options/./././Option.h:
+
+modules/InputDuplicatex/./../../classes/./Options/GenericOption.h:
+
+modules/InputDuplicatex/./../../classes/./Options/OptionUtilities.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/Inputs.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/Input.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/BoolInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/./Input.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/DoubleInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/DoubleArrayInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/IntInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/TetraInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../Elements/TetraRef.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/PentaInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../Elements/PentaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/TriaInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../Elements/TriaRef.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/SegInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/../Elements/SegRef.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/ControlInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/DatasetInput.h:
+
+modules/InputDuplicatex/./../../classes/./Inputs/TransientInput.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/Results.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/ExternalResult.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/../Node.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/GenericExternalResult.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/./ExternalResult.h:
+
+modules/InputDuplicatex/./../../classes/./ExternalResults/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/Materials.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/Material.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/../Update.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/Matice.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/./Material.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/../Hook.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/Matestar.h:
+
+modules/InputDuplicatex/./../../classes/./Materials/Matpar.h:
+
+modules/InputDuplicatex/./../../classes/./Params/GenericParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/./Param.h:
+
+modules/InputDuplicatex/./../../classes/./Params/./../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./Params/./../Node.h:
+
+modules/InputDuplicatex/./../../classes/./Params/../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Params/BoolParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DoubleMatParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DoubleTransientMatParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DoubleMatArrayParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DoubleParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DoubleVecParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/IntParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/IntVecParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/IntMatParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/FileParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/Parameters.h:
+
+modules/InputDuplicatex/./../../classes/./Params/Param.h:
+
+modules/InputDuplicatex/./../../classes/./Params/MatrixParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/VectorParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/StringArrayParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/StringParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/TransientParam.h:
+
+modules/InputDuplicatex/./../../classes/./Params/DataSetParam.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/matrixobjects.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/./ElementMatrix.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/./../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/./../../toolkits/toolkits.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/./../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./matrix/./ElementVector.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/gaussobjects.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./Gauss.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./GaussSeg.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./../../shared/Numerics/types.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/././Gauss.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./GaussTria.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./GaussTetra.h:
+
+modules/InputDuplicatex/./../../classes/./gauss/./GaussPenta.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/krigingobjects.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./Variogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./../../datastructures/datastructures.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./GaussianVariogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/././Variogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./ExponentialVariogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./SphericalVariogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./PowerVariogram.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./Quadtree.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./Covertree.h:
+
+/usr/include/c++/5/map:
+
+/usr/include/c++/5/bits/stl_tree.h:
+
+/usr/include/c++/5/bits/stl_map.h:
+
+/usr/include/c++/5/bits/stl_multimap.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./Observation.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./Observations.h:
+
+modules/InputDuplicatex/./../../classes/./kriging/./../../shared/shared.h:
+
+modules/InputDuplicatex/./../../classes/./Dakota/IssmDirectApplicInterface.h:
+
+modules/InputDuplicatex/./../../classes/./Dakota/IssmParallelDirectApplicInterface.h:
+
+modules/InputDuplicatex/./../../classes/./Hook.h:
+
+modules/InputDuplicatex/./../../classes/./DofIndexing.h:
+
+modules/InputDuplicatex/./../../classes/./IoModel.h:
+
+modules/InputDuplicatex/./../../classes/./../shared/Enum/Enum.h:
+
+modules/InputDuplicatex/./../../classes/./Update.h:
+
+modules/InputDuplicatex/./../../classes/./FemModel.h:
+
+modules/InputDuplicatex/./../../classes/./GiaDeflectionCoreArgs.h:
+
+modules/InputDuplicatex/./../../classes/./RiftStruct.h:
+
+modules/InputDuplicatex/../../shared/shared.h:
+
+modules/InputDuplicatex/../../classes/classes.h:
+
+modules/InputDuplicatex/../../toolkits/toolkits.h:

@@ -1,0 +1,8 @@
+91,93c91,93
+< #set( CMAKE_INSTALL_PREFIX
+< #     "/path/to/Dakota/installation"
+< #     CACHE PATH "Path to Dakota installation" )
+---
+> set( CMAKE_INSTALL_PREFIX
+>      "$ENV{ISSM_DIR}/externalpackages/dakota/install"
+>      CACHE PATH "Path to Dakota installation" )

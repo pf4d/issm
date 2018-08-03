@@ -1,0 +1,218 @@
+from netCDF4 import Dataset, stringtochar
+import numpy
+import time
+import collections
+from mesh2d import *
+from mesh3dprisms import *
+from results import *
+from os import path, remove
+
+def export_netCDF(md,filename):
+	#Now going on Real treatment
+	if path.exists(filename):
+		print ('File {} allready exist'.format(filename))
+		newname=raw_input('Give a new name or "delete" to replace: ')
+		if newname=='delete':
+			remove(filename)
+		else:
+			print ('New file name is {}'.format(newname))
+			filename=newname
+			
+	NCData=Dataset(filename, 'w', format='NETCDF4')
+	NCData.description = 'Results for run' + md.miscellaneous.name
+	NCData.history = 'Created ' + time.ctime(time.time())
+
+	#gather geometry and timestepping as dimensions
+	Duration=md.timestepping.final_time-md.timestepping.start_time
+	if Duration>0 and md.timestepping.time_step*md.settings.output_frequency>0:
+		StepNum=Duration/(md.timestepping.time_step*md.settings.output_frequency)
+	else:
+		StepNum=1
+		
+	Dimension1=NCData.createDimension('Dimension1',md.mesh.numberofelements)
+	Dimension2=NCData.createDimension('Dimension2',md.mesh.numberofvertices)
+	Dimension3=NCData.createDimension('Dimension3',numpy.shape(md.mesh.elements)[1])
+	Dimension4=NCData.createDimension('Dimension4',StepNum)
+	Dimension5=NCData.createDimension('Dimension5',40)
+	Dimension6=NCData.createDimension('Dimension6',2) 
+
+	DimDict = {len(Dimension1):'Dimension1',
+						 len(Dimension2):'Dimension2',
+						 len(Dimension3):'Dimension3',
+						 len(Dimension4):'Dimension4',
+						 len(Dimension5):'Dimension5',
+						 len(Dimension6):'Dimension6'}
+
+	#get all model classes and create respective groups
+	groups=dict.keys(md.__dict__)
+	for group in groups:
+		NCgroup=NCData.createGroup(str(group))
+		#In each group gather the fields of the class
+		fields=dict.keys(md.__dict__[group].__dict__)
+
+		#Special treatment for the results
+		if str(group)=='results':
+			for supfield in fields:#looping on the different solutions
+				NCgroup.__setattr__('classtype', "results")
+				Subgroup=NCgroup.createGroup(str(supfield))
+				Subgroup.__setattr__('classtype',str(supfield))
+				if type(md.results.__dict__[supfield])==list:#the solution have several timestep
+					#get last timesteps and output frequency
+					last_step = numpy.size(md.results.__dict__[supfield])
+					step_freq = md.settings.output_frequency
+					#grab first time step
+					subfields=dict.keys(md.results.__dict__[supfield].__getitem__(0).__dict__)
+					for field in subfields:
+						if str(field)!='errlog' and str(field)!='outlog' and str(field)!='SolutionType':
+							Var=md.results.__dict__[supfield].__getitem__(0).__dict__[field]
+							DimDict=CreateVar(NCData,Var,field,Subgroup,DimDict,True,last_step,step_freq,md,supfield)
+					
+				elif type(md.results.__dict__[supfield])==results:#only one timestep
+					subfields=dict.keys(md.results.__dict__[supfield].__dict__)
+					for field in subfields:
+						if str(field)!='errlog' and str(field)!='outlog' and str(field)!='SolutionType':
+							print 'Treating '+str(group)+'.'+str(supfield)+'.'+str(field)
+							Var=md.results.__dict__[supfield].__dict__[field]
+							DimDict=CreateVar(NCData,Var,field,NCgroup,DimDict,False)
+				else:
+					print 'Result format not suported'
+		else:
+			
+			for field in fields:
+				print 'Treating ' +str(group)+'.'+str(field)
+				NCgroup.__setattr__('classtype', md.__dict__[group].__class__.__name__)
+				Var=md.__dict__[group].__dict__[field]
+				DimDict=CreateVar(NCData,Var,field,NCgroup,DimDict,False)
+	NCData.close()
+
+#============================================================================
+#Define the variables
+def CreateVar(NCData,var,field,Group,DimDict,istime,*step_args):
+	#grab type
+	try:
+		val_type=str(var.dtype)
+	except AttributeError:
+		val_type=type(var)
+		#grab dimension
+	try:
+		val_shape=dict.keys(var)
+	except TypeError:
+		val_shape=numpy.shape(var)
+
+
+	TypeDict = {float:'f8',
+							'float64':'f8',
+							int:'i8',
+							'int64':'i8'}
+		
+	val_dim=numpy.shape(val_shape)[0]
+	#Now define and fill up variable
+	#treating scalar string or bool as atribute
+	if val_type==str or val_type==bool:
+		Group.__setattr__(str(field), str(var))
+
+	#treating list as string table
+	#matlab does not recognise strings so we have to settle down with char arrays
+	elif val_type==list:
+		dimensions,DimDict=GetDim(NCData,var,val_shape,DimDict,val_dim,istime)
+		ncvar = Group.createVariable(str(field),'S1',dimensions,zlib=True)
+		charvar=stringtochar(numpy.array(var))
+		print charvar
+		print charvar.shape
+		for elt in range(0,val_dim):
+			try:
+				ncvar[elt] = charvar[elt]
+			except IndexError:
+				ncvar[0]= " "
+				#treating bool tables as string tables
+	elif val_type=='bool':
+		dimensions,DimDict=GetDim(NCData,var,val_shape,DimDict,val_dim,istime)
+		ncvar = Group.createVariable(str(field),'S1',dimensions,zlib=True)
+		for elt in range(0,val_shape[0]):
+			ncvar[elt] = str(var[elt])
+			#treating dictionaries as string tables of dim 2
+	elif val_type==collections.OrderedDict:
+		dimensions,DimDict=GetDim(NCData,var,val_shape,DimDict,val_dim,istime)
+		ncvar = Group.createVariable(str(field),'S1',dimensions,zlib=True)
+		for elt in range(0,val_dim):
+			ncvar[elt,0]=dict.keys(var)[elt]
+			ncvar[elt,1]=str(dict.values(var)[elt]) #converting to str to avoid potential problems
+			#Now dealing with numeric variables
+	else:
+		dimensions,DimDict=GetDim(NCData,var,val_shape,DimDict,val_dim,istime)
+		ncvar = Group.createVariable(str(field),TypeDict[val_type],dimensions,zlib=True)
+		
+		if istime:
+			last=step_args[0]
+			freq=step_args[1]
+			md=step_args[2]
+			supfield=step_args[3]
+			vartab=var
+			for time in range(freq-1,last,freq):
+				if time!=0:
+					timevar=md.results.__dict__[supfield].__getitem__(time).__dict__[field]
+					print 'Treating results.'+str(supfield)+'.'+str(field)+' for time '+str(time)
+					vartab=numpy.column_stack((vartab,timevar))
+			print numpy.shape(vartab)
+			try:
+				ncvar[:,:]=vartab[:,:]
+			except ValueError:
+				ncvar[:]=vartab.T[:]
+		else:
+			try:
+				nan_val=numpy.isnan(var)
+				if nan_val.all():
+					ncvar [:] = 'NaN'
+				else:
+					ncvar[:] = var
+			except TypeError: #type does not accept nan, get vallue of the variable
+				ncvar[:] = var
+	return DimDict
+
+#============================================================================
+#retriev the dimension tuple from a dictionnary
+def GetDim(NCData,var,shape,DimDict,i,istime):
+	output=[]
+	#grab type
+	try:
+		val_type=str(var.dtype)
+	except AttributeError:
+		val_type=type(var)
+	#grab dimension
+	for dim in range(0,i): #loop on the dimensions
+		if type(shape[0])==int: 
+			try:
+				output=output+[str(DimDict[shape[dim]])] #test if the dimension allready exist
+			except KeyError: #if not create it
+				if (shape[dim])>1:
+					index=len(DimDict)+1
+					NewDim=NCData.createDimension('Dimension'+str(index),(shape[dim]))
+					DimDict[len(NewDim)]='Dimension'+str(index)
+					output=output+[str(DimDict[shape[dim]])]
+					print 'Defining dimension ' +'Dimension'+str(index)
+		elif type(shape[0])==str:#dealling with a dictionnary
+			try:
+				output=[str(DimDict[numpy.shape(shape)[0]])]+['DictDim']
+			except KeyError:
+				index=len(DimDict)+1
+				NewDim=NCData.createDimension('Dimension'+str(index),numpy.shape(shape)[0])
+				DimDict[len(NewDim)]='Dimension'+str(index)
+				output=[str(DimDict[numpy.shape(dict.keys(var))[0]])]+['Dimension6']
+				print 'Defining dimension ' +'Dimension'+str(index)
+			break
+	if istime:
+		output=output+['Dimension4']
+	#dealing with char and not string as we should so we need to had a string length
+	if val_type=='bool' or val_type==collections.OrderedDict or val_type==list:
+		charvar=stringtochar(numpy.array(var))
+		stringlength=charvar.shape[charvar.ndim-1]
+		try:
+			output=output+[str(DimDict[stringlength])] #test if the dimension allready exist
+		except KeyError: #if not create it
+			if (shape[dim])>1:
+				index=len(DimDict)+1
+				NewDim=NCData.createDimension('Dimension'+str(index),(stringlength))
+				DimDict[len(NewDim)]='Dimension'+str(index)
+				output=output+[str(DimDict[stringlength])]
+				print 'Defining dimension ' +'Dimension'+str(index)
+	return tuple(output), DimDict

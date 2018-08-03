@@ -1,0 +1,9 @@
+shared/Bamg/libISSMCore_la-BigPrimeNumber.lo: \
+ shared/Bamg/BigPrimeNumber.cpp /usr/include/stdc-predef.h \
+ shared/Bamg/./Abs.h shared/Bamg/./extrema.h
+
+/usr/include/stdc-predef.h:
+
+shared/Bamg/./Abs.h:
+
+shared/Bamg/./extrema.h:

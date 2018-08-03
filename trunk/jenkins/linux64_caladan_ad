@@ -1,0 +1,55 @@
+#
+#-------------------------------#
+# 1: ISSM general configuration #
+#-------------------------------#
+
+#MATLAB path
+MATLAB_PATH="/usr/local/MATLAB/R2015a"
+
+#ISSM CONFIGURATION 
+ISSM_CONFIG='--prefix=$ISSM_DIR\
+				--disable-static \
+				--prefix=$ISSM_DIR \
+				--without-kriging \
+				--without-kml \
+				--without-Gia \
+				--with-gsl-dir=$ISSM_DIR/externalpackages/gsl/install \
+				--with-adolc-dir=$ISSM_DIR/externalpackages/adolc/install \
+				--with-matlab-dir=$MATLAB_PATH \
+				--with-triangle-dir=$ISSM_DIR/externalpackages/triangle/install '
+
+#PYTHON and MATLAB testing
+MATLAB_TEST=1
+PYTHON_TEST=0
+
+#-----------------------------------#
+# 3: External packages installation #
+#-----------------------------------#
+
+#List of external pakages to be installed and their installation scripts
+EXTERNALPACKAGES="autotools install.sh                
+					 mpich install-3.2-linux64.sh
+					 petsc install-3.7-linux64.sh
+					 metis install-5.0.1-linux64.sh
+					 triangle install-linux64.sh 
+					 gsl install-linux64.sh 
+					 adolc install.sh
+					 shell2junit install.sh"
+
+#-----------------#
+# 4: test options #
+#-----------------#
+
+#number of cpus used in ISSM installation and compilation (one is usually
+#safer as some packages are very sensitive to parallel compilation)
+NUMCPUS_INSTALL=2
+
+#number of cpus used in the nightly runs.
+NUMCPUS_RUN=1
+
+#Nightly run options. The matlab routine runme.m will be called
+#as follows: runme($MATLAB_NROPTIONS). The options must be understandable
+#by Matlab and runme.m
+#ex: "'id',[101 102 103]"
+MATLAB_NROPTIONS="'benchmark','adolc','id',[3001:3019]"
+PYTHON_NROPTIONS=""

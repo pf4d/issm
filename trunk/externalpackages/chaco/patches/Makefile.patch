@@ -1,0 +1,11 @@
+--- ./src/code/Makefile	2016-02-16 19:39:30.000000000 -0800
++++ ./Makefile	2016-02-16 19:37:49.000000000 -0800
+@@ -6,7 +6,7 @@
+ #CFLAGS =	-O2
+ #OFLAGS =	-O2
+ #CFLAGS =	-fPIC -fno-omit-frame-pointer -D_GNU_SOURCE -pthread -fexceptions
+-CFLAGS =	-fPIC -fno-omit-frame-pointer -pthread -fexceptions -g
++CFLAGS =	-fPIC -fno-omit-frame-pointer -pthread -fexceptions -g -I/usr/include/malloc
+ #CFLAGS =	-fPIC -fno-omit-frame-pointer -pthread -fexceptions -DMATLAB
+ OFLAGS =	-O2 
+ #AR =             /usr/ccs/bin/ar rcv   # for solaris 2

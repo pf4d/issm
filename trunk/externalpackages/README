@@ -1,0 +1,22 @@
+To install all the ISSM libraries:
+
+1/ go into each library folder and type install.sh . 
+
+2/ There is no guarantee the compilation will work on all systems. A lot of tweaking of the 
+install.sh files will probably be involved. Especially, the configuration part of the install.
+
+Update: 
+now install.sh can call configure.sh for the most complex libraries, ie Petsc and Dakota. For those 
+libraries, go in the configs/ directory, pick up the correct configuration file and copy it to the top 
+folder of the library compilation. Tweak if necessary.
+
+machine characteristics:
+
+-astrid: linux 64 bits
+-castor: altix 64 bits
+-cosmos: JPL cluster 32 bits
+-macmathieu: iMac 24" 2009 32 bits
+-macbookmathieu: MacBook Pro 13" 2010; OS X 10.6.7; 2.4GHz Intel Core 2 Duo 64 bits
+-maceric: MacBook Pro 15" 2010 32 bits
+-ogive: Mac Pro 2008 32 bits
+-pleiades: AMES cluster

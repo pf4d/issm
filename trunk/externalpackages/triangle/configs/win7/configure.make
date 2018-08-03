@@ -1,0 +1,4 @@
+CC=cl
+CSWITCHES = $(CFLAGS) -DNO_TIMER 
+OBJ_EXT=obj
+LIB_EXT=lib

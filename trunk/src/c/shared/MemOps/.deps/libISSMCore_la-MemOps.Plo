@@ -1,0 +1,27 @@
+shared/MemOps/libISSMCore_la-MemOps.lo: shared/MemOps/MemOps.cpp \
+ /usr/include/stdc-predef.h ../.././config.h shared/MemOps/MemOps.h \
+ /usr/include/c++/5/cassert /usr/include/assert.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+
+/usr/include/stdc-predef.h:
+
+../.././config.h:
+
+shared/MemOps/MemOps.h:
+
+/usr/include/c++/5/cassert:
+
+/usr/include/assert.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:

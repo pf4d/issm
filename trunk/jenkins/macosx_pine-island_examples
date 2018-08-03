@@ -1,0 +1,48 @@
+
+#-------------------------------#
+# 1: ISSM general configuration #
+#-------------------------------#
+
+#MATLAB path
+MATLAB_PATH="/Applications/MATLAB_R2015b.app/"
+
+#ISSM CONFIGURATION 
+ISSM_CONFIG='--prefix=$ISSM_DIR \
+	--with-matlab-dir=$MATLAB_PATH \
+	--with-triangle-dir=$ISSM_DIR/externalpackages/triangle/install \
+	--with-mpi-include=$ISSM_DIR/externalpackages/mpich/install/include  \
+	--with-mpi-libflags="-L$ISSM_DIR/externalpackages/mpich/install/lib -lmpi" \
+	--with-petsc-dir=$ISSM_DIR/externalpackages/petsc/install  \
+	--with-scalapack-dir=$ISSM_DIR/externalpackages/petsc/install/ \
+	--with-mumps-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-metis-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-m1qn3-dir=$ISSM_DIR/externalpackages/m1qn3/install \
+	--with-numthreads=4 \
+	--enable-debugging \
+	--enable-development'
+
+#PYTHON and MATLAB testing
+MATLAB_TEST=0
+PYTHON_TEST=0
+EXAMPLES_TEST=1
+
+#-----------------------------------#
+# 3: External packages installation #
+#-----------------------------------#
+
+#List of external pakages to be installed and their installation scripts
+EXTERNALPACKAGES="autotools    install.sh
+						cmake        install.sh
+						mpich        install-3.2-macosx64.sh
+						m1qn3        install.sh
+						petsc        install-3.7-macosx64.sh
+						triangle     install-macosx64.sh
+						shell2junit  install.sh"
+
+#-----------------#
+# 4: test options #
+#-----------------#
+
+#number of cpus used in ISSM installation and compilation (one is usually
+#safer as some packages are very sensitive to parallel compilation)
+NUMCPUS_INSTALL=4

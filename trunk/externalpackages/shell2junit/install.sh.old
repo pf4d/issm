@@ -1,0 +1,20 @@
+#!/bin/bash
+set -eu
+
+#Some cleanup
+rm -rf install src
+rm -rf shell2junit
+mkdir install src
+
+#Download from ISSM server
+$ISSM_DIR/scripts/DownloadExternalPackage.py 'http://issm.jpl.nasa.gov/files/externalpackages/shell2junit-1.0.0.zip' 'shell2junit-1.0.0.zip'
+
+#Untar 
+unzip shell2junit-1.0.0.zip
+
+#Move shell2junit into install directory
+mv shell2junit/* src
+rm -rf shell2junit
+
+#Copy executable: 
+cp src/sh2ju.sh install

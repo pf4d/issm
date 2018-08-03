@@ -1,0 +1,4 @@
+cores/libISSMCore_la-dummy_core.lo: cores/dummy_core.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

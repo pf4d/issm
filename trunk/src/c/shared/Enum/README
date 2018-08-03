@@ -1,0 +1,9 @@
+
+DO NOT MODIFY the following files:
+- StringToEnumx.cpp
+- EnumToStringx.cpp
+all these files are automatically synchronized with EnumDefinitions.h
+
+TO ADD AN ENUM:
+add the corresponding lines to EnumDefinitions.h
+and execute synchronizing script.

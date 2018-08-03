@@ -1,0 +1,12 @@
+250a251,257
+> /*Patch for ISSM*/
+> #ifndef REAL
+> typedef double REAL;
+> typedef void VOID;
+> #endif
+> /*End patch*/
+> 
+283c290
+< void triangulate(char *, struct triangulateio *, struct triangulateio *,
+---
+> extern "C" void triangulate(char *, struct triangulateio *, struct triangulateio *,

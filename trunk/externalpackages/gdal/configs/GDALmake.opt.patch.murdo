@@ -1,0 +1,8 @@
+31c31
+< LIBS	=	$(SDE_LIB) -I/usr/include -lsqlite3 -L/usr/lib -lexpat -ljpeg -lpng -lz  -lm -lrt -ldl  $(KAK_LIBS) $(DWG_LIBS) $(CURL_LIB) \
+---
+> LIBS	=	$(SDE_LIB) -I/usr/include -lsqlite3 -L/usr/lib64 -lexpat -ljpeg -lpng -lz  -lm -lrt -ldl  $(KAK_LIBS) $(DWG_LIBS) $(CURL_LIB) \
+225c225
+< CURL_LIB	=	-L/usr/kerberos/lib64 -lcurl -ldl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lidn -lssl -lcrypto -lz  
+---
+> CURL_LIB	=	-L/usr/lib64 -lcurl -ldl -lgssapi_krb5 -lkrb5 -lk5crypto -lcom_err -lidn -lssl -lcrypto -lz  

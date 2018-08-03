@@ -1,0 +1,261 @@
+# This holds the errors to be suppressed from valgrind report for ISSM.
+# See: http://valgrind.org/docs/manual/manual-core.html#manual-core.suppress
+#
+# to add errors:
+#   1. in m/classes/clusters/generic.m,
+#      add: --gen-suppressions=all
+#   2. in the errlog, copy and paste the suppression log
+#      in this file.
+
+#OS specific errors{{{
+#http://stackoverflow.com/questions/14474691/wifstream-with-imbue-locale-produces-valgrind-errors (larsen)
+{
+   <OS1>
+   Memcheck:Addr8
+   fun:wcscmp
+   fun:_ZNSt10moneypunctIwLb1EED1Ev
+   fun:_ZNSt10moneypunctIwLb1EED0Ev
+}
+{
+   <OS0>
+   Memcheck:Addr8
+   fun:wcscmp
+   fun:_ZNSt10moneypunctIwLb0EED1Ev
+   fun:_ZNSt10moneypunctIwLb0EED0Ev
+   fun:_ZNSt6locale5_ImplD1Ev
+   fun:_ZNSt6localeD1Ev
+   fun:__cxa_finalize
+   obj:/u/astrid-r1b/morlighe/issmjpl/cron/trunk-jpl/externalpackages/boost/install/lib/libboost_filesystem.so.1.49.0
+   obj:/u/astrid-r1b/morlighe/issmjpl/cron/trunk-jpl/externalpackages/boost/install/lib/libboost_filesystem.so.1.49.0
+   fun:__run_exit_handlers
+   fun:exit
+   fun:(below main)
+}
+{
+   <OS2>
+   Memcheck:Leak
+   fun:_Znwm
+   fun:_ZNSs4_Rep9_S_createEmmRKSaIcE
+   fun:_ZNSs12_S_constructIPKcEEPcT_S3_RKSaIcESt20forward_iterator_tag
+   fun:_ZNSsC1EPKcRKSaIcE
+}
+{
+	<Libgfortranronne>
+	  Memcheck:Cond
+	  obj:/usr/lib/x86_64-linux-gnu/libgfortran.so.3.0.0
+	  obj:/usr/lib/x86_64-linux-gnu/libgfortran.so.3.0.0
+	  obj:/usr/lib/x86_64-linux-gnu/libgfortran.so.3.0.0
+	  fun:call_init.part.0
+	  fun:call_init
+	  fun:_dl_init
+	  obj:/lib/x86_64-linux-gnu/ld-2.15.so
+	  obj:*
+	  obj:*
+	  obj:*
+	  obj:*
+	  obj:*
+}
+#}}}
+#PETSc {{{
+{
+   <petsc0>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:maybe_complete
+   fun:PMPI_Waitany
+   fun:MatStashScatterGetMesg_Private
+   fun:MatAssemblyEnd_MPIAIJ
+   fun:MatAssemblyEnd
+}
+{
+   <petsc1>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:maybe_complete
+   fun:PMPI_Waitany
+   fun:VecStashScatterGetMesg_Private
+   fun:VecAssemblyEnd_MPI
+   fun:VecAssemblyEnd
+   fun:_ZN8PetscVec8AssembleEv
+}
+{
+   <petsc2>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:_Z14VecToMPISerialPPdP6_p_Veci
+   fun:_ZN8PetscVec11ToMPISerialEv
+}
+{
+   <petsc3>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:maybe_complete
+   fun:PMPI_Waitany
+   fun:VecScatterCreate_PtoS
+   fun:VecScatterCreate
+   fun:MatSetUpMultiply_MPIAIJ
+   fun:MatAssemblyEnd_MPIAIJ
+   fun:MatAssemblyEnd
+}
+{
+   <mumps0>
+   Memcheck:Leak
+   fun:malloc
+   fun:mumps_397.3148
+   fun:__mumps_static_mapping_MOD_mumps_369
+   fun:dmumps_537_
+   fun:dmumps_26_
+   fun:dmumps_
+   fun:dmumps_f77_
+   fun:dmumps_c
+   fun:MatLUFactorSymbolic_AIJMUMPS
+   fun:MatLUFactorSymbolic
+   fun:PCSetUp_LU
+   fun:PCSetUp
+}
+{
+   <mumps1>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:mpi_recv
+   fun:dmumps_664_
+}
+{
+   <mumps2>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:maybe_complete
+   fun:PMPI_Waitany
+   fun:mpi_waitany
+   fun:dmumps_664_
+}
+{
+   <mumps3>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:mpi_recv
+   fun:dmumps_282_
+}
+{
+   <mumps4>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:mpi_recv
+   fun:dmumps_255_
+}
+{
+   <mumps5>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:maybe_complete
+   fun:PMPI_Wait
+   fun:PMPI_WAIT
+   fun:dmumps_255_
+}
+{
+   <mump6>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:mpi_recv
+   fun:dmumps_638_
+}
+{
+   <mumps7>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:PMPI_Recv
+   fun:mpi_recv
+   fun:dmumps_640.3488
+}
+{
+   <mumps8>
+   Memcheck:User
+   fun:PMPI_Get_count
+   fun:MPI_GET_COUNT
+   fun:dmumps_638_
+}
+{
+   <mumps9>
+   Memcheck:User
+   fun:check_mem_is_defined_untyped
+   fun:PMPI_Pack
+   fun:PMPI_PACK
+   fun:__dmumps_comm_buffer_MOD_dmumps_62
+}
+{
+   <mumps10>
+   Memcheck:User
+   fun:check_mem_is_defined_untyped
+   fun:PMPI_Pack
+   fun:PMPI_PACK
+   fun:__dmumps_comm_buffer_MOD_dmumps_62
+}
+{
+	<mumps11>
+	  Memcheck:User
+	  fun:check_mem_is_defined_untyped
+	  fun:PMPI_Isend
+	  fun:libparmetis__gkMPI_Isend
+	  fun:libparmetis__CommInterfaceData
+	  fun:libparmetis__CompactGraph
+	  fun:libparmetis__MultilevelOrder
+	  fun:ParMETIS_V32_NodeND
+	  fun:ParMETIS_V3_NodeND
+	  fun:mumps_parmetis_
+}
+{
+	<mumps12>
+	  Memcheck:User
+	  fun:check_mem_is_defined_untyped
+	  fun:PMPI_Bcast
+	  fun:MPI_BCAST
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_718
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_717
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_715
+}
+{
+	<mumps13>
+	  Memcheck:Leak
+	  fun:malloc
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_775
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_720
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_715
+}
+{
+	<mump14>
+	  Memcheck:Leak
+	  fun:malloc
+	  fun:mumps_754_
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_781
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_720
+	  fun:__dmumps_parallel_analysis_MOD_dmumps_715
+	  fun:dmumps_26_
+	  fun:dmumps_
+	  fun:dmumps_f77_
+	  fun:dmumps_c
+	  fun:MatLUFactorSymbolic_AIJMUMPS
+	  fun:MatLUFactorSymbolic
+	  fun:PCSetUp_LU
+}
+{
+	<mumps15>
+	  Memcheck:Cond
+	  fun:MPIC_Waitall
+	  fun:MPIR_Alltoall_intra
+	  fun:MPIR_Alltoall
+	  fun:MPIR_Alltoall_impl
+	  fun:PMPI_Alltoall
+	  fun:PMPI_ALLTOALL
+	  fun:dmumps_numvolsndrcv_
+	  fun:dmumps_simscaleabsuns_
+	  fun:dmumps_simscaleabs_
+	  fun:dmumps_fac_driver_
+	  fun:dmumps_
+	  fun:dmumps_f77_
+}
+#}}}

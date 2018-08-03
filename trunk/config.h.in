@@ -1,0 +1,406 @@
+/* ./config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* enabling parallel MPI */
+#undef DAKOTA_HAVE_MPI
+
+/* disabling DAKOTA_CONFIG_H */
+#undef DISABLE_DAKOTA_CONFIG_H
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Mpi Flag for Dakota (DO NOT REMOVE) */
+#undef HAVE_MPI
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Host Archictecture */
+#undef HOST_ARCH
+
+/* Host cpu */
+#undef HOST_CPU
+
+/* Host full OS name and version */
+#undef HOST_OS
+
+/* Host OS name */
+#undef HOST_OS_NAME
+
+/* Host OS version */
+#undef HOST_OS_VERSION
+
+/* Host vendor */
+#undef HOST_VENDOR
+
+/* with 64 bits indices */
+#undef ISSM_USE_64BIT_INDICES
+
+/* Define to the sub-directory where libtool stores uninstalled libraries. */
+#undef LT_OBJDIR
+
+/* Name of package */
+#undef PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Build date */
+#undef PACKAGE_BUILD_DATE
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Build user name */
+#undef USER_NAME
+
+/* Version number of package */
+#undef VERSION
+
+/* ADOLC version */
+#undef _ADOLC_VERSION_
+
+/* Dakota build version number */
+#undef _DAKOTA_BUILD_
+
+/* Dakota major version number */
+#undef _DAKOTA_MAJOR_
+
+/* Dakota minor version number */
+#undef _DAKOTA_MINOR_
+
+/* Dakota version number */
+#undef _DAKOTA_VERSION_
+
+/* Macro to enable development version in ISSM */
+#undef _DEVELOPMENT_
+
+/* with adic2 in ISSM src */
+#undef _HAVE_ADIC2_
+
+/* with AdjointBalancethickness2 capability */
+#undef _HAVE_ADJOINTBALANCETHICKNESS2_
+
+/* with AdjointBalancethickness capability */
+#undef _HAVE_ADJOINTBALANCETHICKNESS_
+
+/* with AdjointHoriz capability */
+#undef _HAVE_ADJOINTHORIZ_
+
+/* with adolc in ISSM src */
+#undef _HAVE_ADOLC_
+
+/* with AD in ISSM src */
+#undef _HAVE_AD_
+
+/* with adjoinable mpi in ISSM src */
+#undef _HAVE_AMPI_
+
+/* with android capability */
+#undef _HAVE_ANDROID_
+
+/* with android jni */
+#undef _HAVE_ANDROID_JNI_
+
+/* with android ndk in ISSM src */
+#undef _HAVE_ANDROID_NDK_
+
+/* with ATLAS in ISSM src */
+#undef _HAVE_ATLAS_
+
+/* with Balancethickness2 capability */
+#undef _HAVE_BALANCETHICKNESS2_
+
+/* with BalancethicknessSoft capability */
+#undef _HAVE_BALANCETHICKNESSSOFT_
+
+/* with Balancethickness capability */
+#undef _HAVE_BALANCETHICKNESS_
+
+/* with Balancevelocity capability */
+#undef _HAVE_BALANCEVELOCITY_
+
+/* with bamg meshing capability */
+#undef _HAVE_BAMG_
+
+/* with Blacs in ISSM src */
+#undef _HAVE_BLACS_
+
+/* with blas lapack in ISSM src */
+#undef _HAVE_BLASLAPACK_
+
+/* with Boost in ISSM src */
+#undef _HAVE_BOOST_
+
+/* with Chaco in ISSM src */
+#undef _HAVE_CHACO_
+
+/* with Dakota in ISSM src */
+#undef _HAVE_DAKOTA_
+
+/* with DamageEvolution capability */
+#undef _HAVE_DAMAGEEVOLUTION_
+
+/* with DepthAverage capability */
+#undef _HAVE_DEPTHAVERAGE_
+
+/* with Enthalpy capability */
+#undef _HAVE_ENTHALPY_
+
+/* with Esa capability */
+#undef _HAVE_ESA_
+
+/* with esmf in ISSM src */
+#undef _HAVE_ESMF_
+
+/* with Extrapolation capability */
+#undef _HAVE_EXTRAPOLATION_
+
+/* with ExtrudeFromBase capability */
+#undef _HAVE_EXTRUDEFROMBASE_
+
+/* with ExtrudeFromTop capability */
+#undef _HAVE_EXTRUDEFROMTOP_
+
+/* with FORTRAN in ISSM src */
+#undef _HAVE_FORTRAN_
+
+/* with FreeSurfaceBase capability */
+#undef _HAVE_FREESURFACEBASE_
+
+/* with FreeSurfaceTop capability */
+#undef _HAVE_FREESURFACETOP_
+
+/* with GiaIvins capability */
+#undef _HAVE_GIAIVINS_
+
+/* with GRAPHICS in ISSM src */
+#undef _HAVE_GRAPHICS_
+
+/* with gsl in ISSM src */
+#undef _HAVE_GSL_
+
+/* with HydrologyDCEfficient capability */
+#undef _HAVE_HYDROLOGYDCEFFICIENT_
+
+/* with HydrologyDCInefficient capability */
+#undef _HAVE_HYDROLOGYDCINEFFICIENT_
+
+/* with HydrologyShreve capability */
+#undef _HAVE_HYDROLOGYSHREVE_
+
+/* with HydrologySommers capability */
+#undef _HAVE_HYDROLOGYSOMMERS_
+
+/* with Hypre in ISSM src */
+#undef _HAVE_HYPRE_
+
+/* with android capability */
+#undef _HAVE_IOS_
+
+/* with javascript */
+#undef _HAVE_JAVASCRIPT_
+
+/* with kml capability */
+#undef _HAVE_KML_
+
+/* with kriging capability */
+#undef _HAVE_KRIGING_
+
+/* with L2ProjectionBase capability */
+#undef _HAVE_L2PROJECTIONBASE_
+
+/* with L2ProjectionEPL capability */
+#undef _HAVE_L2PROJECTIONEPL_
+
+/* with Levelset capability */
+#undef _HAVE_LEVELSET_
+
+/* with M1QN3 in ISSM src */
+#undef _HAVE_M1QN3_
+
+/* with Masstransport capability */
+#undef _HAVE_MASSTRANSPORT_
+
+/* with math77 in ISSM src */
+#undef _HAVE_MATH77_
+
+/* with MATH in ISSM src */
+#undef _HAVE_MATH_
+
+/* with matlab in ISSM src */
+#undef _HAVE_MATLAB_
+
+/* with Melting capability */
+#undef _HAVE_MELTING_
+
+/* with Meshdeformation capability */
+#undef _HAVE_MESHDEFORMATION_
+
+/* with meteoio */
+#undef _HAVE_METEOIO_
+
+/* with Metis in ISSM src */
+#undef _HAVE_METIS_
+
+/* with mkl in ISSM src */
+#undef _HAVE_MKL_
+
+/* with Blacs in ISSM src */
+#undef _HAVE_ML_
+
+/* with Mpi in ISSM src */
+#undef _HAVE_MPI_
+
+/* with Mumps in ISSM src */
+#undef _HAVE_MUMPS_
+
+/* with NEOPZ in ISSM src */
+#undef _HAVE_NEOPZ_
+
+/* with ice/ocean coupling capability */
+#undef _HAVE_OCEAN_
+
+/* with Pastix in ISSM src */
+#undef _HAVE_PASTIX_
+
+/* with PETSc-dev */
+#undef _HAVE_PETSCDEV_
+
+/* with PETSc in ISSM src */
+#undef _HAVE_PETSC_
+
+/* with Plapack in ISSM src */
+#undef _HAVE_PLAPACK_
+
+/* with PROJ4 in ISSM src */
+#undef _HAVE_PROJ4_
+
+/* with Prometheus in ISSM src */
+#undef _HAVE_PROMETHEUS_
+
+/* with python in ISSM src */
+#undef _HAVE_PYTHON_
+
+/* with Python-Numpy in ISSM src */
+#undef _HAVE_PYTHON_NUMPY_
+
+/* with rose in ISSM src */
+#undef _HAVE_ROSE_
+
+/* with Scalapack in ISSM src */
+#undef _HAVE_SCALAPACK_
+
+/* with Scotch in ISSM src */
+#undef _HAVE_SCOTCH_
+
+/* with Sealevelrise capability */
+#undef _HAVE_SEALEVELRISE_
+
+/* with Shapelib in ISSM src */
+#undef _HAVE_SHAPELIB_
+
+/* with Slepc in ISSM src */
+#undef _HAVE_SLEPC_
+
+/* with Smb capability */
+#undef _HAVE_SMB_
+
+/* with Smooth capability */
+#undef _HAVE_SMOOTH_
+
+/* with snowpack for surface mass balance model */
+#undef _HAVE_SNOWPACK_
+
+/* with Spai in ISSM src */
+#undef _HAVE_SPAI_
+
+/* with Spooles in ISSM src */
+#undef _HAVE_SPOOLES_
+
+/* with StressbalanceSIA capability */
+#undef _HAVE_STRESSBALANCESIA_
+
+/* with StressbalanceVertical capability */
+#undef _HAVE_STRESSBALANCEVERTICAL_
+
+/* with Stressbalance capability */
+#undef _HAVE_STRESSBALANCE_
+
+/* with Superlu in ISSM src */
+#undef _HAVE_SUPERLU_
+
+/* with Tao in ISSM src */
+#undef _HAVE_TAO_
+
+/* with Thermal capability */
+#undef _HAVE_THERMAL_
+
+/* with Triangle in ISSM src */
+#undef _HAVE_TRIANGLE_
+
+/* with UMFPACK in ISSM src */
+#undef _HAVE_UMFPACK_
+
+/* with UzawaPressure capability */
+#undef _HAVE_UZAWAPRESSURE_
+
+/* Macro to enable debugging in ISSM */
+#undef _ISSM_DEBUG_
+
+/* Metis version number */
+#undef _METIS_VERSION_
+
+/* with numthreads enabled */
+#undef _MULTITHREADING_
+
+/* number of threads */
+#undef _NUMTHREADS_
+
+/* PETSc version major */
+#undef _PETSC_MAJOR_
+
+/* PETSc version minor */
+#undef _PETSC_MINOR_
+
+/* python version major */
+#undef _PYTHON_MAJOR_

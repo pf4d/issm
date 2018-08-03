@@ -1,0 +1,66 @@
+%Parameterization for ISMIP F experiment
+
+%Set the Simulation generic name #md.miscellaneous
+%->
+
+%Geometry
+disp('   Constructing Geometry');
+
+%Define the geometry of the simulation #md.geometry
+%surface is [-x*tan(3.0*pi/180)] #md.mesh
+%->
+md.geometry.surface=md.mesh.x*tan(3.0*pi/180.0);
+%base is [surface-1000+100*exp(-((x-L/2).^2+(y-L/2).^2)/(10000.^2))]
+%L is the size of the side of the square #max(md.mesh.x)-min(md.mesh.x)
+%->
+L=max(md.mesh.x)-min(md.mesh.x);
+%->
+md.geometry.base=md.geometry.surface-1000.0+100.0*exp(-((md.mesh.x-L/2.0).^2.0+(md.mesh.y-L/2.0).^2.0)/(10000.^2.0));
+%thickness is the difference between surface and base #md.geometry
+%->
+md.geometry.thickness=md.geometry.surface-md.geometry.base;
+%plot the geometry to check it out
+%->
+plotmodel(md,'data',md.geometry.thickness);
+
+disp('   Defining friction parameters');
+
+%These parameters will not be used but need to be fixed #md.friction
+%one friciton coefficient per node (md.mesh.numberofvertices,1)
+%conversion form year to seconds with #md.constants.yts
+%->
+md.friction.coefficient=sqrt(md.constants.yts/(1000*2.140373*10^-7))*ones(md.mesh.numberofvertices,1);
+%one friciton exponent (p,q) per element
+%->
+md.friction.p=ones(md.mesh.numberofelements,1);
+%->
+md.friction.q=zeros(md.mesh.numberofelements,1);
+
+disp('   Construct ice rheological properties');
+
+%The rheology parameters sit in the material section #md.materials
+%B has one value per vertex
+%->
+md.materials.rheology_B=(1/(2.140373*10^-7/md.constants.yts))*ones(md.mesh.numberofvertices,1);
+%n has one value per element
+%->
+md.materials.rheology_n=1*ones(md.mesh.numberofelements,1);
+
+disp('   Set boundary conditions');
+
+%Set the default boundary conditions for an ice-sheet 
+% #help SetIceSheetBC
+%->
+md=SetIceSheetBC(md);
+
+disp('   Initializing velocity and pressure');
+
+%initialize the velocity and pressurefields of #md.initialization
+%->
+md.initialization.vx=zeros(md.mesh.numberofvertices,1);
+%->
+md.initialization.vy=zeros(md.mesh.numberofvertices,1);
+%->
+md.initialization.vz=zeros(md.mesh.numberofvertices,1);
+%->
+md.initialization.pressure=zeros(md.mesh.numberofvertices,1);

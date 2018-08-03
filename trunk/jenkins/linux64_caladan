@@ -1,0 +1,67 @@
+
+#-------------------------------#
+# 1: ISSM general configuration #
+#-------------------------------#
+
+#MATLAB path
+MATLAB_PATH="/usr/local/MATLAB/R2015a"
+
+#ISSM CONFIGURATION 
+ISSM_CONFIG='--prefix=$ISSM_DIR\
+	--disable-static \
+	--with-matlab-dir=$MATLAB_PATH \
+	--with-triangle-dir=$ISSM_DIR/externalpackages/triangle/install \
+	--with-mpi-include=$ISSM_DIR/externalpackages/mpich/install/include  \
+	--with-mpi-libflags="-L$ISSM_DIR/externalpackages/mpich/install/lib -lmpi" \
+	--with-petsc-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-metis-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-mumps-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-blas-lapack-dir=$ISSM_DIR/externalpackages/petsc/install \
+	--with-scalapack-dir=$ISSM_DIR/externalpackages/petsc/install/ \
+	--with-python-dir=/usr\
+	--with-python-numpy-dir=/usr/lib/python2.7/dist-packages/numpy\
+	--with-chaco-dir="$ISSM_DIR/externalpackages/chaco/install" \
+	--with-dakota-dir=$ISSM_DIR/externalpackages/dakota/install \
+	--with-boost-dir=$ISSM_DIR/externalpackages/boost/install/ \
+	--with-fortran-lib="-L/usr/lib/gcc/x86_64-linux-gnu/4.9/ -lgfortran" \
+	--with-m1qn3-dir=$ISSM_DIR/externalpackages/m1qn3/install \
+	--with-numthreads=4 \
+	--enable-development \
+	--enable-debugging '
+
+#PYTHON and MATLAB testing
+MATLAB_TEST=1
+PYTHON_TEST=1
+
+#-----------------------------------#
+# 3: External packages installation #
+#-----------------------------------#
+
+#List of external pakages to be installed and their installation scripts
+EXTERNALPACKAGES="autotools     install.sh                
+						mpich         install-3.2-linux64.sh    
+						petsc         install-3.7-linux64.sh    
+						triangle      install-linux64.sh        
+						boost         install.sh                
+						dakota        install-6.2-linux64.sh  
+						chaco         install.sh 
+						m1qn3         install.sh          
+						shell2junit   install.sh"
+
+#-----------------#
+# 4: Test options #
+#-----------------#
+
+#number of cpus used in ISSM installation and compilation (one is usually
+#safer as some packages are very sensitive to parallel compilation)
+NUMCPUS_INSTALL=4
+
+#number of cpus used in the nightly runs.
+NUMCPUS_RUN=2
+
+#Nightly run options. The matlab routine runme.m will be called
+#as follows: runme($MATLAB_NROPTIONS). The options must be understandable
+#by Matlab and runme.m
+#ex: "'id',[101 102 103]"
+PYTHON_NROPTIONS="--exclude 119 514 701 702 435"
+MATLAB_NROPTIONS="'exclude',[119,514,701,702,435]"

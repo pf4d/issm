@@ -1,0 +1,36 @@
+
+# running a test
+-----------------
+
+To run a test, just type: testxxx in matlab
+To check that the results of a test are similar to the Archive, type: runme('id',xxx)
+Several tests can be run at the same time.
+If no id if specified, all the tests will be done.
+All the archives are contained in ../Archives
+To update a test archive, use runme('procedure','update','id',xxx)
+Once again, if no id is specified, all the archives will be updated.
+
+
+# How to create a new test
+--------------------------
+
+This directory contains all the tests that run every night to check the code.
+The file IdToName associate a test id to its name.
+All the files necessary to run the tests can be found in:
+../Exp/ for the exp files (domains, contours, ...)
+../Par/ for the parameter files (to parameterize a model)
+../Data/ for the datasets needed to initialize a model
+To add a test, create a new testxxx.m and a testxxx_nightly.m
+
+The first number of the id correspond to the type of test:
+1: SquareShelfConstrained (no icefront)
+2: SquareShelf (with an icefront)
+3: SquareSheetConstrained (no icefront)
+4: SquareSheetShelf (Marine ice sheet with an ice shelf at the end)
+5: Pine Island Glacier
+6: 79North
+Add the id and testname in IdToName.m (incresing order)
+We try not to create too many .par and .exp files, so try to use the existing ones as much as possible.
+To modify some characteristics, do it in the testxxx.m file.
+Specify the field_names the field_values and the tolerance at the end of the test file.
+Don't forget to commit the archive (Archivexxx.arch in ../Archives)

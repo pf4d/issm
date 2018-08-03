@@ -1,0 +1,17 @@
+Downloaded from https://www.mathworks.com/matlabcentral/fileexchange/23629-export-fig
+
+We had to patch export_fig.m to force export_fig to use the renderers painter, otherwise it is just way to slow (opengl is the default if we have patches)
+
+Line  585:
+
+
+if ~options.renderer
+    if hasTransparency || hasPatches
+        % This is *MUCH* slower, but more accurate for patches and transparent annotations (issue #39)
+        renderer = '-opengl';
+    else
+        renderer = '-painters';
+    end
+end
+
+change to painters all the time
