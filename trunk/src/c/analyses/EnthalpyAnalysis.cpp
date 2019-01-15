@@ -473,7 +473,13 @@ void           EnthalpyAnalysis::Core(FemModel* femmodel){/*{{{*/
 
 	if(VerboseSolution()) _printf0_("   computing enthalpy\n");
 	femmodel->SetCurrentConfiguration(EnthalpyAnalysisEnum);
-	if((dt>0.) && isdynamicbasalspc)	UpdateBasalConstraints(femmodel);
+	/*
+	if(isdynamicbasalspc)
+	{
+		ComputeBasalMeltingrate(femmodel);
+		UpdateBasalConstraints(femmodel);
+	}
+	*/
 	solutionsequence_thermal_nonlinear(femmodel);
 
 	/*transfer enthalpy to enthalpy picard for the next step: */

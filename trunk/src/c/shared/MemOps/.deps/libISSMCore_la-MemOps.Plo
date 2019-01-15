@@ -1,10 +1,15 @@
 shared/MemOps/libISSMCore_la-MemOps.lo: shared/MemOps/MemOps.cpp \
  /usr/include/stdc-predef.h ../.././config.h shared/MemOps/MemOps.h \
- /usr/include/c++/5/cassert /usr/include/assert.h /usr/include/features.h \
- /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/c++/7/cassert \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h \
+ /usr/include/assert.h
 
 /usr/include/stdc-predef.h:
 
@@ -12,9 +17,11 @@ shared/MemOps/libISSMCore_la-MemOps.lo: shared/MemOps/MemOps.cpp \
 
 shared/MemOps/MemOps.h:
 
-/usr/include/c++/5/cassert:
+/usr/include/c++/7/cassert:
 
-/usr/include/assert.h:
+/usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h:
 
 /usr/include/features.h:
 
@@ -22,6 +29,12 @@ shared/MemOps/MemOps.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h:
+
+/usr/include/assert.h:

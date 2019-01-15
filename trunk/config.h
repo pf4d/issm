@@ -53,7 +53,7 @@
 #define HOST_OS_NAME "linux"
 
 /* Host OS version */
-#define HOST_OS_VERSION "4.10.0-37-generic"
+#define HOST_OS_VERSION "4.15.0-34-generic"
 
 /* Host vendor */
 #define HOST_VENDOR "pc"
@@ -71,7 +71,7 @@
 #define PACKAGE_BUGREPORT "issm@jpl.nasa.gov"
 
 /* Build date */
-#define PACKAGE_BUILD_DATE "Mon Oct 16 09:31:51 CEST 2017"
+#define PACKAGE_BUILD_DATE "Thu Sep 20 16:37:12 CEST 2018"
 
 /* Define to the full name of this package. */
 #define PACKAGE_NAME "Ice Sheet System Model (ISSM)"
@@ -170,7 +170,7 @@
 #define _HAVE_BLASLAPACK_ 1
 
 /* with Boost in ISSM src */
-/* #undef _HAVE_BOOST_ */
+#define _HAVE_BOOST_ 1
 
 /* with Chaco in ISSM src */
 /* #undef _HAVE_CHACO_ */
@@ -395,13 +395,13 @@
 #define _MULTITHREADING_ 1
 
 /* number of threads */
-#define _NUMTHREADS_ 2
+#define _NUMTHREADS_ 5
 
 /* PETSc version major */
 #define _PETSC_MAJOR_ 3
 
 /* PETSc version minor */
-#define _PETSC_MINOR_ 6
+#define _PETSC_MINOR_ 7
 
 /* python version major */
 #define _PYTHON_MAJOR_ 2

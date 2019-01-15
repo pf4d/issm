@@ -1,6 +1,6 @@
 /*!\file: solutionsequence_thermal_nonlinear.cpp
- * \brief: core of the thermal solution 
- */ 
+ * \brief: core of the thermal solution
+ */
 
 #include "./solutionsequences.h"
 #include "../toolkits/toolkits.h"
@@ -11,10 +11,10 @@
 void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 
 	/*solution : */
-	Vector<IssmDouble>* tg=NULL; 
-	Vector<IssmDouble>* tf=NULL; 
-	Vector<IssmDouble>* tf_old=NULL; 
-	Vector<IssmDouble>* ys=NULL; 
+	Vector<IssmDouble>* tg=NULL;
+	Vector<IssmDouble>* tf=NULL;
+	Vector<IssmDouble>* tf_old=NULL;
+	Vector<IssmDouble>* ys=NULL;
 	IssmDouble melting_offset;
 
 	/*intermediary: */
@@ -43,7 +43,10 @@ void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 	converged=false;
 	InputUpdateFromConstantx(femmodel,converged,ConvergedEnum);
 
-	if(isenthalpy){
+	if(isenthalpy)
+	{
+		IssmDouble dt;
+		femmodel->parameters->FindParam(&dt,TimesteppingTimeStepEnum);
 		femmodel->parameters->FindParam(&isdynamicbasalspc,ThermalIsdynamicbasalspcEnum);
 		femmodel->parameters->FindParam(&eps_rel,ThermalReltolEnum);
 		femmodel->UpdateConstraintsx();
@@ -52,6 +55,11 @@ void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 		GetSolutionFromInputsx(&tg,femmodel);
 		Reducevectorgtofx(&tf, tg, femmodel->nodes,femmodel->parameters);
 		InputUpdateFromSolutionx(femmodel,tg);
+		if (dt == 0.0)
+		{
+			EnthalpyAnalysis::ComputeBasalMeltingrate(femmodel);
+			EnthalpyAnalysis::UpdateBasalConstraints(femmodel);
+		}
 	}
 	else{
 		femmodel->parameters->FindParam(&thermal_penalty_threshold,ThermalPenaltyThresholdEnum);
@@ -60,11 +68,11 @@ void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 	}
 
 	count=1;
-	
-	for(;;){
+
+	while (!converged){
 		delete tf_old;tf_old=tf;
 
-		if(isenthalpy){ 
+		if(isenthalpy){
 			SystemMatricesx(&Kff,&Kfs,&pf,&df,NULL,femmodel);
 			/*Update old solution, such that sizes of tf_old and tf are comparable*/
 			if(isdynamicbasalspc){
@@ -78,8 +86,8 @@ void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 		Reduceloadx(pf, Kfs, ys); delete Kfs;
 		Solverx(&tf, Kff, pf, tf_old, df, femmodel->parameters);
 		Mergesolutionfromftogx(&tg, tf,ys,femmodel->nodes,femmodel->parameters); delete ys;
-		if(isenthalpy){ 
-			convergence(&converged,Kff,pf,tf,tf_old,0.05,eps_rel,NAN); 
+		if(isenthalpy){
+			convergence(&converged,Kff,pf,tf,tf_old,0.05,eps_rel,NAN);
 			InputUpdateFromConstantx(femmodel,converged,ConvergedEnum);
 		}
 		delete Kff; delete pf; delete df;
@@ -88,37 +96,39 @@ void solutionsequence_thermal_nonlinear(FemModel* femmodel){
 		if(VerboseConvergence()) _printf0_("   number of unstable constraints: " << num_unstable_constraints << "\n");
 
 		if(isenthalpy){ // enthalpy method
+			/*
 			IssmDouble dt;
 			femmodel->parameters->FindParam(&dt,TimesteppingTimeStepEnum);
+			*/
 
 			count++;
 			bool max_iteration_state=false;
 			if(count>=thermal_maxiter){
-				_printf0_("   maximum number of nonlinear iterations (" << thermal_maxiter << ") exceeded\n"); 
+				_printf0_("   maximum number of nonlinear iterations (" << thermal_maxiter << ") exceeded\n");
 				converged=true;
 				InputUpdateFromConstantx(femmodel,converged,ConvergedEnum);
-				InputUpdateFromSolutionx(femmodel,tg);		
+				InputUpdateFromSolutionx(femmodel,tg);
 				max_iteration_state=true;
 			}
-			if(converged==true){
-				break;
-			}
+			/*
 			else if(dt==0.){
 				EnthalpyAnalysis::ComputeBasalMeltingrate(femmodel);
 				EnthalpyAnalysis::UpdateBasalConstraints(femmodel);
 			}
+			*/
 		}
-		else{ // dry ice method
+		// dry ice method
+		else
+		{
 			if(!converged){
 				if(num_unstable_constraints<=thermal_penalty_threshold) converged=true;
 				if(count>=thermal_maxiter){
 					converged=true;
-					_printf0_("   maximum number of iterations (" << thermal_maxiter << ") exceeded\n"); 
+					_printf0_("   maximum number of iterations (" << thermal_maxiter << ") exceeded\n");
 				}
 			}
 			count++;
 			InputUpdateFromConstantx(femmodel,converged,ConvergedEnum);
-			if(converged)break;
 		}
 	}
 
